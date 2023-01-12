@@ -10,9 +10,7 @@ import sys
 def email_parser(url, file_name, levels):
    links = [[url]]
    domain = url.split(".")
-   domain = domain[0]
-   domain=domain.split("//")
-   domain=domain[1]
+   domain=domain[-2:]
    print(domain)
                        
 
